@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-nastaliq {
+    font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+  }
+  .font-arabic {
+    font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+  }
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .font-amiri {
+    font-family: 'Amiri', serif;
+  }
+}
+
+/* Custom Islamic aesthetic background and parchment texture */
+.islamic-parchment-bg {
+  background-color: #ede7db;
+  background-image: radial-gradient(#d6ccb8 0.75px, transparent 0.75px), radial-gradient(#d6ccb8 0.75px, #ede7db 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Calligraphy pattern subtle overlay */
+.calligraphy-bg-overlay {
+  background-image: radial-gradient(circle at 50% 50%, rgba(201, 151, 56, 0.08) 0%, transparent 70%);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ded5c2;
+}
+::-webkit-scrollbar-thumb {
+  background: #9d8560;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7a6645;
+}

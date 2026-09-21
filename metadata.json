@@ -1,0 +1,6 @@
+{
+  "name": "اسلامی معلومات اور ہدایت کا مرکز",
+  "description": "قرآن و سنت، احادیثِ نبویہ ﷺ، سنہری اقوال، روزانہ اسلامی کیلنڈر، قرآنی تصاویر اور دعوتی ویڈیوز کا مستند مرکز (اردو اور پښتو)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
