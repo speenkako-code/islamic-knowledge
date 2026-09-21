@@ -16,6 +16,21 @@
   <body class="bg-[#ede7db] text-[#332e27] antialiased selection:bg-[#c99738] selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Fallback for static servers like GitHub Pages where /src/main.tsx cannot be served
+      setTimeout(function() {
+        var root = document.getElementById('root');
+        if (root && root.children.length === 0) {
+          if (window.location.hostname.includes('github.io')) {
+            var pathname = window.location.pathname;
+            if (!pathname.includes('/docs/')) {
+              if (!pathname.endsWith('/')) pathname += '/';
+              window.location.replace(window.location.origin + pathname + 'docs/');
+            }
+          }
+        }
+      }, 600);
+    </script>
   </body>
 </html>
 
